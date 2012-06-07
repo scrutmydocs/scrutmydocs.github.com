@@ -36,18 +36,12 @@
     <div class="navbar navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
-          <a class="brand" href="#">ESSearch</a>
+          <a class="brand" href="#" title="Produit ESSearch"><img src="img/logo.png" height="36px"></a>
           <div class="nav-collapse">
             <ul class="nav pull-right">
-              <li><a href="oss.html">OSS</a></li>
+              <li><a href="oss.html" title="voir le projet Open Source"><img src="img/oss.png" height="36px"></a></li>
             </ul>
-            
-          </div><!--/.nav-collapse -->
+          </div>
         </div>
       </div>
     </div>
@@ -85,12 +79,14 @@
 					</div>
 				</div>
 			</div>
-			<a class="left carousel-control" href="#myCarousel"
-				data-slide="prev">&lsaquo;</a> <a class="right carousel-control"
-				href="#myCarousel" data-slide="next">&rsaquo;</a>
+			<a class="left carousel-control" href="#myCarousel" data-slide="prev" title="Précédent">&lsaquo;</a> 
+			<a class="right carousel-control" href="#myCarousel" data-slide="next" title="Suivant">&rsaquo;</a>
 		</div>
       
-        <p><a class="btn btn-large btn-success" href="http://es-search.issamax.cloudbees.net/">Démo &raquo;</a> <a class="btn btn-primary btn-large">En savoir plus &raquo;</a></p>
+        <p>
+        <a class="btn btn-large btn-success" href="http://es-search.issamax.cloudbees.net/" title="Voir une démo">Démo &raquo;</a>
+        <a class="btn btn-primary btn-large" href="#" title="Caractéristiques du produit">En savoir plus &raquo;</a>
+        </p>
       
       </div>
 
@@ -99,12 +95,12 @@
         <div class="span4">
           <h2>Offre Cloud</h2>
            <ul class="unstyled">
-           	<li>Pas de coûts d'exploitation
+           	<li>Pas de <a href="#" title="No costs" rel="tooltip">coûts d'exploitation</a>
            	<li>Pas de coûts d'exploitation
            	<li>Pas de coûts d'exploitation
            	<li>Pas de coûts d'exploitation
            </ul>
-          <p><a class="btn" href="#">Tarifs & inscriptions &raquo;</a></p>
+          <p><a class="btn" href="#" title="Tarifs et inscription en ligne">Tarifs & inscriptions &raquo;</a></p>
         </div>
         <div class="span4">
           <h2>Offre In Situ</h2>
@@ -114,7 +110,7 @@
            	<li>Hébergez vous même la solution...
            	<li>Hébergez vous même la solution...
            </ul>
-          <p><a class="btn" href="#">Détails & contacts &raquo;</a></p>
+          <p><a class="btn" href="#" title="Voir les détails de l'offre et demander un devis">Détails & contacts &raquo;</a></p>
        </div>
         <div class="span4">
           <h2>Architecture</h2>
@@ -124,7 +120,7 @@
            	<li>Découvrez ce qui se cache sous le capot de la bête !
            	<li>Découvrez ce qui se cache sous le capot de la bête !
            </ul>
-          <p><a class="btn" href="#">Architecture &raquo;</a></p>
+          <p><a class="btn" href="#" title="Architecture technique du produit et plugins">Architecture &raquo;</a></p>
         </div>
       </div>
 
@@ -154,11 +150,18 @@
     <script src="js/bootstrap-typeahead.js"></script>
 
 	<script>
-     $(document).ready(function() {
+	// Start jQuery
+    $(document).ready(function() {
     	$('.carousel').carousel({
     		  interval: 5000
    		});
-     });
+    	$("a").tooltip({
+    		placement: "bottom"
+    	});
+
+     
+   	// End of Start jQuery
+    });
    </script>
    
   </body>
