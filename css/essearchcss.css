@@ -1,23 +1,32 @@
-#forkme_banner {
-	display: block;
-	position: absolute;
-	top: 0;
-	right: 500px;
-	z-index: 10;
-	padding: 10px 50px 10px 10px;
+#fork {
 	color: white;
-	background: url('../images/blacktocat.png') #0090FF no-repeat 95% 50%;
-	font-weight: 700;
-	box-shadow: 0 0 10px rgba(0, 0, 0, .5);
-	border-bottom-left-radius: 2px;
-	border-bottom-right-radius: 2px;
+	background-color: #0090FF;
+	font-weight: bold;
+	text-align: center;
+	padding: .5em 4em;
+	position: absolute;
+	right: -4.2em;
+	top: 8em;
+	-webkit-transform: rotate(+45deg);
+	-moz-transform: rotate(+45deg);
+	-o-transform: rotate(+45deg);
+	filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand',
+		M11=0.7071067811865475, M21=-0.7071067811865476, M12=0.7071067811865476,
+		M22=0.7071067811865475 );
+	-webkit-box-shadow: 0 0 5px 5px rgba(50, 50, 50, 0.5);
+	-moz-box-shadow: 0 0 5px 5px rgba(50, 50, 50, 0.5);
+	box-shadow: 0 0 5px 5px rgba(50, 50, 50, 0.5);
+	text-shadow: 0 0 2px white;
+	z-index: 1;
 }
 
 .zip_download_link {
 	display: block;
 	float: right;
+	left: -4.2em;
 	width: 90px;
 	height: 70px;
+	position: absolute;
 	text-indent: -5000px;
 	overflow: hidden;
 	background: url(../images/sprite_download.png) no-repeat bottom left;
@@ -28,6 +37,7 @@
 	float: right;
 	width: 90px;
 	height: 70px;
+	position: absolute;
 	text-indent: -5000px;
 	overflow: hidden;
 	background: url(../images/sprite_download.png) no-repeat bottom right;
