@@ -12,6 +12,8 @@
 
 <!-- Le styles -->
 <link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/bootstrap-modal.js" rel="stylesheet">
 <style type="text/css">
 body {
 	padding-top: 60px;
@@ -46,9 +48,16 @@ body {
 	<div class="navbar navbar-fixed-top">
 		<div class="navbar-inner">
 			<div class="container">
-				<a class="brand" href="./index.html" title="Produit ESSearch"><img
-					src="img/logo.png" height="36px"> Essearch is an open source
-					project ..</a>
+				<ul class="nav">
+					<li><a class="brand" href="./index.html"
+						title="Produit ESSearch"><img src="img/logo.png" height="36px">
+							Essearch is an open source project ..</a></li>
+				</ul>
+				<ul class="nav pull-right">
+					<li><a data-toggle="modal" href="#supportModal"><img
+							src="img/logo.png" height="36px"> <span
+							class="label label-info">Support </span></a></li>
+				</ul>
 			</div>
 		</div>
 	</div>
@@ -69,6 +78,8 @@ body {
 						rel="tooltip"> <img src="img/functionnal1.png"
 						alt="Envoyez vos documents. Cherchez dans vos documents. Retrouvez les plus pertinents.">
 					</a>
+
+
 				</div>
 				<div class="span3">
 					<a class="btn btn-large btn-success"
@@ -80,7 +91,6 @@ body {
 				</div>
 			</div>
 		</div>
-
 		<!-- Example row of columns -->
 		<div class="row">
 			<div class="span4">
@@ -91,6 +101,14 @@ body {
 					<li><i class="icon-ok"></i> Envois manuels de documents
 					<li><i class="icon-ok"></i> RestFull API <a
 						href="https://github.com/issamax/essearch" rel="tooltip">documentation</a>.
+
+
+
+
+
+
+
+
 
 					
 					<li><i class="icon-ok"></i> Connexion avec DropBox &
@@ -161,6 +179,21 @@ body {
 			// End of Start jQuery
 		});
 	</script>
+
+	<div class="modal hide fade" id="supportModal">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal">×</button>
+			<h1>
+				<span class="label label-info">Support </span>
+			</h1>
+		</div>
+		<div class="modal-body">
+			<p>Support service is not yet available</p>
+		</div>
+		<div class="modal-footer">
+			<a href="#" class="btn" data-dismiss="modal">Close</a>
+		</div>
+	</div>
 
 </body>
 </html>
