@@ -54,8 +54,7 @@ body {
 							Essearch is an open source project ..</a></li>
 				</ul>
 				<ul class="nav pull-right">
-					<li><a data-toggle="modal" href="#supportModal"><img
-							src="img/logo.png" height="36px"> <span
+					<li><a data-toggle="modal" href="#supportModal"><span
 							class="label label-info">Support </span></a></li>
 				</ul>
 			</div>
@@ -65,7 +64,7 @@ body {
 	<div class="container">
 		<div class="page-header">
 			<h1>
-				<small> <strong> Send, Look for and find ! </strong>
+				<small> <strong> Send, find and fetch ! </strong>
 			</h1>
 		</div>
 
@@ -85,7 +84,7 @@ body {
 					<a class="btn btn-large btn-success"
 						href="http://es-search.issamax.cloudbees.net/"
 						title="Voir une démo">Démo &raquo;</a><br> <br> <a
-						class="btn btn-primary btn-large" href="./technical.html"
+						class="btn btn-primary btn-large"  data-toggle="modal" href="#techniqueModal"
 						title="Caractéristiques techniques du produit">Détails
 						techniques &raquo;</a>
 				</div>
@@ -116,7 +115,7 @@ body {
 				</ul>
 			</div>
 			<div class="span4">
-				<h2>Look for !</h2>
+				<h2>Find !</h2>
 				<ul class="unstyled">
 					<li><i class="icon-ok"></i> Cherchez vos documents "à la
 						google"
@@ -128,7 +127,7 @@ body {
 				</ul>
 			</div>
 			<div class="span4">
-				<h2>Find !</h2>
+				<h2>Fetch !</h2>
 				<ul class="unstyled">
 					<li><i class="icon-ok"></i> Visualisez immédiatement la
 						pertinence des résultats
@@ -166,8 +165,7 @@ body {
 	<script src="js/bootstrap-carousel.js"></script>
 	<script src="js/bootstrap-typeahead.js"></script>
 
-	<script>
-		// Start jQuery
+	<script>technique		// Start jQuery
 		$(document).ready(function() {
 			$('.carousel').carousel({
 				interval : 5000
@@ -194,6 +192,24 @@ body {
 			<a href="#" class="btn" data-dismiss="modal">Close</a>
 		</div>
 	</div>
+	
+	
+	<div class="modal hide fade" id="techniqueModal">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal">×</button>
+			<h1>
+				<span class="label label-info">Détail techniques </span>
+			</h1>
+		</div>
+		<div class="modal-body">
+			 <img src="img/technical1.png">
+		</div>
+		<div class="modal-footer">
+			<a href="#" class="btn" data-dismiss="modal">Close</a>
+		</div>
+	</div>
+	
+	
 
 </body>
 </html>
