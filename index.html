@@ -43,8 +43,6 @@ body {
 
 <body>
 
-	<a id="fork" href="https://github.com/issamax/essearch">Fork me on
-		GitHub</a>
 	<div class="navbar navbar-fixed-top">
 		<div class="navbar-inner">
 			<div class="container">
@@ -53,40 +51,65 @@ body {
 						title="Produit ESSearch"><img src="img/logo.png" height="36px">
 							Essearch is an open source project ..</a></li>
 				</ul>
-				<ul class="nav pull-right">
-					<li><a data-toggle="modal" href="#supportModal"><span
-							class="label label-info">Support </span></a></li>
-				</ul>
 			</div>
 		</div>
 	</div>
-
+	<br/>
 	<div class="container">
-		<div class="page-header">
-			<h1>
-				<small> <strong> Send, find and fetch ! </strong>
-			</h1>
-		</div>
 
 		<!-- Main hero unit for a primary marketing message or call to action -->
 		<div class="hero-unit">
 			<div class="row-fluid">
-				<div class="span9">
+				<div class="span12" align="center">
+					<h1>Send,&nbsp;find&nbsp;and&nbsp;fetch&nbsp;!</h1><br>
+				</div>
+			</div>
+			<div class="row-fluid">
+				<div class="span4">
+					<div class="well">
+  						ESSearch is an open source search web application project powered by <a href="http://www.elasticsearch.org/">Elasticsearch</a>.<br><br>
+  						<ul>
+  						<li>You have many source of documents in your company and you want to share them :<br/>Just download, start and <b>relax</b> !
+  						<li>You want to build your own web application for searching : Just fork it and <b>code</b> !
+  						</ul>
+  						
+  						
+					</div>
+				</div>
+				
+				<div class="span8">
 					<a
-						title="Send your documents.<br>Search your documents.<br>Find the most relevants."
+						title="Send your documents. Search your documents. Find the most relevants."
 						rel="tooltip"> <img src="img/functionnal1.png"
 						alt="Send your documents.<br>Search your documents.<br>Find the most relevants.">
 					</a>
-
-
 				</div>
-				<div class="span3">
-					<a class="btn btn-large btn-success"
+			</div>			
+			<div class="row-fluid">
+				<div class="span4" align="center">
+					<a class="btn btn-success btn-large"
 						href="http://es-search.issamax.cloudbees.net/"
-						title="See a demo">Demo &raquo;</a><br> <br> <a
-						class="btn btn-primary btn-large"  data-toggle="modal" href="#techniqueModal"
-						title="Technical specifications">Technical specifications &raquo;</a>
+						title="See a demo">
+						<b>ESSEARCH</b><br>Free Download<br><br>
+						0.0.1 - 15/07/2012</a>
 				</div>
+				<div class="span2 offset1" align="center">
+					<a class="btn btn-danger"
+						href="http://es-search.issamax.cloudbees.net/"
+						title="See a demo">Demo&nbsp;&raquo;</a>
+				</div>
+				<div class="span2 offset1" align="center">
+					<a
+						class="btn btn-primary"  data-toggle="modal" href="#technical"
+						title="Technical specifications">Architecture&nbsp;&raquo;</a>
+				</div>
+				<div class="span2" align="center">
+					<a
+						class="btn btn-inverse" href="https://github.com/issamax/essearch"
+						title="Github">Github&nbsp;&raquo;</a>
+							
+				</div>
+				
 			</div>
 		</div>
 		<!-- Example row of columns -->
@@ -98,17 +121,7 @@ body {
 					<li><i class="icon-ok"></i> Manually upload documents 
 					<li><i class="icon-ok"></i> RestFull API <a
 						href="https://github.com/issamax/essearch" rel="tooltip">documentation</a>.
-
-
-
-
-
-
-
-
-
-					
-					<li><i class="icon-ok"></i> DropBox &
+					<li><i class="icon-ok"></i> DropBox and
 						GoogleDrive Integration <span class="label label-info">upcoming</span>
 				</ul>
 			</div>
@@ -131,14 +144,44 @@ body {
 			</div>
 		</div>
 
-		<hr>
-
-		<footer>
-			<p>&copy; ESSearch 2012</p>
-		</footer>
-
 	</div>
 	<!-- /container -->
+
+	<div class="bottombar">
+		<div class="container">
+			<div class="row">
+				<div class="span2 offset2"><h3>Company</h3></div>
+				<div class="span2 offset1"><h3>Community</h3></div>
+				<div class="span2 offset1"><h3>Follow Us</h3></div>
+			</div>		
+			<div class="row">
+				<div class="span2 offset2">
+					<ul class="unstyled">
+						<li><i class="icon-ok"></i> <a data-toggle="modal" href="#aboutus">About us</a>
+						<li><i class="icon-ok"></i> <a data-toggle="modal" href="#contactus">Contact us</a>
+						<li><i class="icon-ok"></i> <a data-toggle="modal" href="#support">Support</a>
+					</ul>
+				</div>
+				<div class="span2 offset1">
+					<ul class="unstyled">
+						<li><i class="icon-ok"></i> <a href="https://github.com/issamax/essearch/wiki">Wiki</a>
+						<li><i class="icon-ok"></i> <a href="https://github.com/issamax/essearch">Github</a>
+						<li><i class="icon-ok"></i> <a href="https://github.com/issamax/essearch/issues">Issues</a>
+					</ul>
+				</div>
+				<div class="span2 offset1">
+					<ul class="unstyled">
+						<li><i class="icon-ok"></i> <a href="http://twitter.com/#!/essearch">Twitter</a>
+						<li><i class="icon-ok"></i> <a data-toggle="modal" href="#mailinglist">Mailing list</a>
+					</ul>
+				</div>
+			</div>	
+			<div class="row">
+				<div class="span12 footer">&copy; ESSearch 2012</div>
+			</div>		
+		</div>
+	</div>
+
 
 	<!-- Le javascript
     ================================================== -->
@@ -157,51 +200,142 @@ body {
 	<script src="js/bootstrap-carousel.js"></script>
 	<script src="js/bootstrap-typeahead.js"></script>
 
-	<script>technique		// Start jQuery
+	<div class="modal hide fade" id="contactus">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal">&times;</button>
+			<h1>Contact us</h1>
+		</div>
+		<div class="modal-body">
+			<a href="mailto:contact@essearch.pilato.fr">contact@essearch.pilato.fr</a>
+		</div>
+		<div class="modal-footer">
+			<a href="#" class="btn" data-dismiss="modal">Close</a>
+		</div>
+	</div>
+	
+	
+	<div class="modal hide fade" id="support">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal">&times;</button>
+			<h1>Support</h1>
+		</div>
+		<div class="modal-body">
+			<ul>
+				<li>Support is not yet available
+			</ul>
+		</div>
+		<div class="modal-footer">
+			<a href="#" class="btn" data-dismiss="modal">Close</a>
+		</div>
+	</div>
+	
+	<div class="modal hide fade" id="aboutus">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal">&times;</button>
+			<h1>About us</h1>
+		</div>
+		<div class="modal-body" align="center">
+		
+		<img src="img/team.png" height="200">
+		
+         <div class="accordion" id="accordion2">
+            <div class="accordion-group">
+              <div class="accordion-heading">
+                <a class="accordion-toggle">
+                  David Pilato
+                </a>
+              </div>
+              <div id="collapseOne" class="accordion-body">
+                <div class="accordion-inner" align="left">
+	 				David Pilato is a software architect, project manager and senior developer in love with search and NoSQL technologies with a special focus on ElasticSearch.<br>
+					He leads the french Elasticsearch community and gives some talks like Devoxx France in 2012.<br>
+					He implements some plugins for the Elasticsearch ecosystem (like <a href="https://github.com/dadoonet/rssriver">RSS River</a>
+					and <a href="https://github.com/dadoonet/spring-elasticsearch">Spring Factories</a>).<br>
+					He implements a search solution based on Elasticsearch for a french government service.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-group">
+              <div class="accordion-heading">
+                <a class="accordion-toggle">
+                  Malloum Laya
+                </a>
+              </div>
+              <div id="collapseTwo" class="accordion-body">
+                <div class="accordion-inner" align="left">
+					Malloum Laya is a software architect, project manager and senior developer in love with the NoSQL ecosystem (BigCouch, CouchDB, CouchBase and MongoDB).<br>
+					He answered the big data needs for a french government service (more than 100 millions documents).
+                </div>
+              </div>
+            </div>
+            <div class="accordion-group">
+              <div class="accordion-heading">
+                <a class="accordion-toggle">
+                  The company
+                </a>
+              </div>
+              <div id="collapseThree" class="accordion-body">
+                <div class="accordion-inner" align="left">
+                	TODO !
+                
+					A ut BigData and a search issues in the a BigData, there got a idea to create essearch.
+					Essearch is an interface with core services. The idea is simple: you have a multiple source of data , you can centralize and search it in only one interface.
+                </div>
+              </div>
+            </div>
+          </div>		
+
+		</div>
+		<div class="modal-footer">
+			<a href="#" class="btn" data-dismiss="modal">Close</a>
+		</div>
+	</div>
+	
+	<div class="modal hide fade" id="mailinglist">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal">&times;</button>
+			<h1>Subscribe to mailing list</h1>
+		</div>
+		<div class="modal-body">
+			<ul>
+				<li>User Mailing list is not yet available
+				<li>Developper Mailing list is not yet available
+			</ul>
+		</div>
+		<div class="modal-footer">
+			<a href="#" class="btn" data-dismiss="modal">Close</a>
+		</div>
+	</div>
+	
+	<div class="modal hide fade" id="technical">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal">&times;</button>
+			<h1>Technical overview</h1>
+		</div>
+		<div class="modal-body">
+			<img src="img/technical1.jpg">
+			<br>
+			Everything else is secret !<br>
+			But don't tell to others : code is <a href="https://github.com/issamax/essearch">open</a> :-/ !
+		</div>
+		<div class="modal-footer">
+			<a href="#" class="btn" data-dismiss="modal">Close</a>
+		</div>
+	</div>
+	
+	
+				 
+	
+	<script>
+		// Start jQuery
 		$(document).ready(function() {
-			$('.carousel').carousel({
-				interval : 5000
-			});
 			$("a").tooltip({
 				placement : "bottom"
 			});
-
+			$(".collapse").collapse();
 			// End of Start jQuery
 		});
 	</script>
-
-	<div class="modal hide fade" id="supportModal">
-		<div class="modal-header">
-			<button type="button" class="close" data-dismiss="modal">×</button>
-			<h1>
-				<span class="label label-info">Support </span>
-			</h1>
-		</div>
-		<div class="modal-body">
-			<p>Support service is not yet available</p>
-		</div>
-		<div class="modal-footer">
-			<a href="#" class="btn" data-dismiss="modal">Close</a>
-		</div>
-	</div>
-	
-	
-	<div class="modal hide fade" id="techniqueModal">
-		<div class="modal-header">
-			<button type="button" class="close" data-dismiss="modal">×</button>
-			<h1>
-				<span class="label label-info">Technical specifications </span>
-			</h1>
-		</div>
-		<div class="modal-body">
-			 <img src="img/technical1.png">
-		</div>
-		<div class="modal-footer">
-			<a href="#" class="btn" data-dismiss="modal">Close</a>
-		</div>
-	</div>
-	
-	
 
 </body>
 </html>
