@@ -68,7 +68,7 @@ body {
 					<div class="well">
   						<strong>ScrutMyDocs</strong> is an open source search web application project powered by
   						<a href="http://www.elasticsearch.org/" id="popover" title="elasticsearch.org" 
-  						data-content="<img src='http://www.elasticsearch.org/images/header.png'>Elasticsearch is the most powerful, scalable and fully featured
+  						data-content="<img src='http://www.elasticsearch.org/images/header.png'><br/>Elasticsearch is the most powerful, scalable and fully featured
   						open source search project.">Elasticsearch</a>.<br><br>
   						<ul>
   						<li>You have many source of documents in your company and you want to share them :<br/>Just download, start and <b>relax</b> !
@@ -96,8 +96,10 @@ body {
 						0.0.1 - 15/07/2012</a>
 				</div>
 				<div class="span2 offset1" align="center">
-					<a class="btn btn-danger"
-						href="http://es-search.issamax.cloudbees.net/"
+					<a class="btn btn-danger" id="popoverCloudbees" 
+						href="http://scrutmydocs.scrutmydocs.cloudbees.net/"
+						data-content="<img src='http://www.cloudbees.com/sites/all/themes/custom/cloudbees_zen/logo-color.png'><br/>
+						Demo is hosted on cloudbees free service.<br/>It can take few seconds to wake up the service."
 						title="See a demo">Demo&nbsp;&raquo;</a>
 				</div>
 				<div class="span2 offset1" align="center">
@@ -106,10 +108,11 @@ body {
 						title="Technical specifications">Architecture&nbsp;&raquo;</a>
 				</div>
 				<div class="span2" align="center">
-					<a
-						class="btn btn-inverse" href="https://github.com/scrutmydocs/scrutmydocs"
-						title="Github">Fork us on Github&nbsp;&raquo;</a>
-							
+					<a class="btn btn-inverse" id="popoverGithub" 
+						href="https://github.com/scrutmydocs/scrutmydocs"
+						data-content="<img src='img/github.png'><br/>
+						Source code is available on Github."
+						title="Fork us on Github">Github&nbsp;&raquo;</a>
 				</div>
 				
 			</div>
@@ -352,6 +355,8 @@ body {
 			});
 			$(".collapse").collapse();
 			$("#popover").popover();
+			$("#popoverCloudbees").popover();
+			$("#popoverGithub").popover();
 			// End of Start jQuery
 		});
 	</script>
