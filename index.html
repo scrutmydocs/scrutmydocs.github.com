@@ -66,7 +66,10 @@ body {
 			<div class="row-fluid">
 				<div class="span4">
 					<div class="well">
-  						<strong>ScrutMyDocs</strong> is an open source search web application project powered by <a href="http://www.elasticsearch.org/">Elasticsearch</a>.<br><br>
+  						<strong>ScrutMyDocs</strong> is an open source search web application project powered by
+  						<a href="http://www.elasticsearch.org/" id="popover" title="elasticsearch.org" 
+  						data-content="<img src='http://www.elasticsearch.org/images/header.png'>Elasticsearch is the most powerful, scalable and fully featured
+  						open source search project.">Elasticsearch</a>.<br><br>
   						<ul>
   						<li>You have many source of documents in your company and you want to share them :<br/>Just download, start and <b>relax</b> !
   						<li>You want to build your own web application for searching : Just fork it and <b>code</b> !
@@ -348,6 +351,7 @@ body {
 				placement : "bottom"
 			});
 			$(".collapse").collapse();
+			$("#popover").popover();
 			// End of Start jQuery
 		});
 	</script>
