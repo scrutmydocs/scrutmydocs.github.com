@@ -99,7 +99,7 @@
 						title="See a demo">Demo&nbsp;&raquo;</a>
 				</div>
 				<div class="span2 offset1" align="center">
-					<a class="btn btn-danger" data-toggle="modal" href="#roadmap"
+					<a class="btn btn-warning" data-toggle="modal" href="#roadmap"
 						title="Roadmap">Roadmap&nbsp;&raquo;</a>
 				</div>
 				<div class="span2 offset1" align="center">
@@ -360,32 +360,53 @@
 	<div class="modal hide fade" id="roadmap">
 		<div class="modal-header">
 			<button type="button" class="close" data-dismiss="modal">&times;</button>
-			<h1>Roadmap</h1>
+			<h1>Roadmap (what we have in mind)</h1>
 		</div>
 		<div class="modal-body">
-			<blockquote class="pull-right">
-				Api documentation <small> 0.2.0 (september 2012)</small>
+			<p>Here are the main features we think to add in the next months. Feel free to
+			add your <a href="https://github.com/scrutmydocs/scrutmydocs/issues">feature requests</a>.
+			</p>
+			<blockquote>
+				<h3>REST API and documentation</h3>
+				<p>We need to add new cool features available through the RESTFul API.</p>
+				<p>By the way, we need to document it more with some full examples, aka curl recreation scripts.</p>
+				<small>0.1.1 (august 2012)</small>
 			</blockquote>
-			<blockquote class="pull-left">
-				Api documentation <small> 0.2.0 (september 2012)</small>
+
+			<blockquote>
+				<h3>Company branding logo and css</h3>
+				<p>The idea is to let each company to decide the design that fits to their needs.</p>
+				<p>Just push a logo and a CSS under your company name and we will display it instead of
+				the scrutmydocs default branding.</p>
+				<small>0.2.0 (september 2012)</small>
 			</blockquote>
-			<br/>
-			
-			<blockquote class="pull-right">
-				Api documentation <small> 0.2.0 (september 2012)</small>
+
+			<blockquote>
+				<h3>DropBox and GoogleDrive integration</h3>
+				<p>We want to be able to get documents from any dropbox or googledrive account.</p>
+				<small>0.3.0 (november 2012)</small>
 			</blockquote>
-			<blockquote class="pull-left">
-				Api documentation <small> 0.2.0 (september 2012)</small>
+
+			<blockquote>
+				<h3>Display hit results as you want</h3>
+				<p>Display your own documents as you want to design them using JQuery.</p>
+				<p><strong>"Your data, your search !"</strong> : only <strong>you</strong> know how to display a document. We
+				have a standard model for binary documents (pdf, oOo, ...), but idea is to let you
+				send any structured document to scrutmydocs. Then, as a result, we will create a div
+				and we will call your own JQuery plugin method.</p>
+				<p>Something like:</p>
+				<code>
+					$.yourplugin(divname, _source);
+				</code>
+				<small>0.4.0 (end of 2012)</small>
 			</blockquote>
-			<br/>
-			
-			<blockquote class="pull-right">
-				Api documentation <small> 0.2.0 (september 2012)</small>
+
+			<blockquote>
+				<h3>Advanced search</h3>
+				<p>We can detect your model (using mappings). So we can probably create an advanced search
+				based on this model.</p>
+				<small>0.5.0 (early 2013)</small>
 			</blockquote>
-			<blockquote class="pull-left">
-				Api documentation <small> 0.2.0 (september 2012)</small>
-			</blockquote>
-			<br/>
 
 		</div>
 		<div class="modal-footer">
